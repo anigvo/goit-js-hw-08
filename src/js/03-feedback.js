@@ -31,7 +31,7 @@ if (currentInput) {
 
 function onFormSubmit(event) {
   event.preventDefault();
-  if (!form.elements.email || !form.elements.message.value) {
+  if (!form.elements.email.value || !form.elements.message.value) {
     window.alert(`Потрібно заповнити усі форми`)
     return;
   }
